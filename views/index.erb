@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Personality Test</title>
+</head>
+<body>
+	<header>
+		<h1>The Three Question Personality Test</h1>
+	</header>
+
+	<form action="/result" method="post">
+		<ol>
+			<li class="question">You work best:</li>
+			<ul class="options">
+				<label class="radio">
+					<li>
+						<input type="radio" name="1" value="1" required>With deadlines
+					</li>
+				</label>
+				<label class="radio">
+					<li>
+						<input type="radio" name="1" value="2">Without deadlines
+					</li>
+				</label>
+			</ul>
+
+			<li class="question">You consider yourself more:</li>
+			<ul class="options">
+				<label class="radio">
+					<li>
+						<input type="radio" name="2" value="1" required>Rational
+					</li>
+				</label>
+				<label class="radio">
+					<li>
+						<input type="radio" name="2" value="2">Compassionate
+					</li>
+				</label>
+			</ul>
+
+			<li class="question">You are more interested in:</li>
+			<ul class="options">
+				<label class="radio">
+					<li>
+						<input type="radio" name="3" value="1" required>Ideas
+					</li>
+				</label>
+				<label class="radio">
+					<li>
+						<input type="radio" name="3" value="2">Facts
+					</li>
+				</label>
+			</ul>
+		</ol>
+		<input type="submit" value="Submit" class="submit-button">
+	</form>
+	
+</body>
+</html>

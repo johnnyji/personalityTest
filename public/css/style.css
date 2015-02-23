@@ -1,0 +1,56 @@
+html, body {
+  box-sizing: border-box;
+  font-family: arial;
+  width: 80vw;
+  margin: 2em auto 2em auto;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header {
+	margin: 0 auto 0 auto;
+	text-align: center;
+	color: #d35400;
+	font-weight: bold;
+	width: auto;
+}
+
+form {
+	padding: 2em;
+	font-size: 1.1em;
+}
+
+.question {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+li {
+	font-weight: normal;
+}
+
+.submit-button {
+	position: relative;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	left: 50%;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	background-color: #d35400;
+	border-style: none;
+	padding: 1em 2em 1em 2em;
+	font-weight: bold;
+	color: #FFF;
+	letter-spacing: 1px;
+	margin-top: 1em;
+}
+
+.submit-button:hover {
+	padding: 1em 4em 1em 4em;
+	background-color: #2c3e50;
+}

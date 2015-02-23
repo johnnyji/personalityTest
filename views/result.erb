@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Personality Test</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body>
+	<h1 class="result-title">Your Personality Is <%= @personality %></h1>
+
+	<section class="result-summary">
+		<% if @personality == "Rational" %>
+			<p>You're normal</p>
+		<% else %>
+			<p>You're Insane</p>
+		<% end %>
+	</section>
+</body>
+</html>
