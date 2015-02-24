@@ -9,11 +9,16 @@ get "/result" do
 end
 
 post "/result" do
-	@result = params.values.group_by { |x| x }.values.max_by(&:size).first
-	if @result == 1
-		@personality = "Rational"
-	elsif @result == 2
-		@personality = "Artisian"
+	@result_string = params.values
+	@result = @result_string.map(&:to_i)
+
+	deadlines = @result[0]
+	mood = @result[1]
+	interest = @result[2]
+
+	if deadlines == 1 && mood == 1
+		@personality = "HELLO"
 	end
+
 	erb :result
 end
