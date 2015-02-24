@@ -7,13 +7,6 @@
 </head>
 <body>
 	<h1 class="result-title">Your Personality Is <%= @personality %></h1>
-
-	<section class="result-summary">
-		<% if @personality == "Rational" %>
-			<p>You're normal</p>
-		<% else %>
-			<p>You're Insane</p>
-		<% end %>
-	</section>
+	<p class="result-bio"><%= @bio %></p>
 </body>
 </html>

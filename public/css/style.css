@@ -19,6 +19,8 @@ header {
 form {
 	padding: 2em;
 	font-size: 1.1em;
+	width: 60%;
+	margin: 0 auto 0 auto;
 }
 
 .question {
